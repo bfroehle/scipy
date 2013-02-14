@@ -38,7 +38,7 @@ def needs_cblas_wrapper(info):
 
 tmpl_empty_cblas_pyf = '''
 python module cblas
-  usercode void empty_module(void) {}
+  usercode static void empty_module(void) {}
   interface
     subroutine empty_module()
       intent(c) empty_module

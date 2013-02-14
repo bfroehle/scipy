@@ -29,7 +29,7 @@ def do_generate_fake_interface(target, source, env):
 
     f = open(target_name, 'w')
     f.write('python module '+name+'\n')
-    f.write('usercode void empty_module(void) {}\n')
+    f.write('usercode static void empty_module(void) {}\n')
     f.write('interface\n')
     f.write('subroutine empty_module()\n')
     f.write('intent(c) empty_module\n')

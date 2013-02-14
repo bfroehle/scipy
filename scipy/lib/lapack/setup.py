@@ -13,7 +13,7 @@ skip_single_routines = 0
 
 tmpl_empty_clapack_pyf = '''
 python module clapack
-  usercode void empty_module(void) {}
+  usercode static void empty_module(void) {}
   interface
     subroutine empty_module()
       intent(c) empty_module

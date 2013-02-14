@@ -93,7 +93,7 @@ def configuration(parent_package='',top_path=None):
         if name[0]=='c' and atlas_version is None and newer(__file__,target):
             f = open(target,'w')
             f.write('python module '+name+'\n')
-            f.write('usercode void empty_module(void) {}\n')
+            f.write('usercode static void empty_module(void) {}\n')
             f.write('interface\n')
             f.write('subroutine empty_module()\n')
             f.write('intent(c) empty_module\n')
