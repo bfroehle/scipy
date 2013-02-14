@@ -5,8 +5,6 @@ def configuration(parent_package='',top_path=None):
 
     config = Configuration('lib',parent_package,top_path,
                            setup_name = 'setupscons.py')
-    config.add_subpackage('blas')
-    config.add_subpackage('lapack')
 
     return config
 
